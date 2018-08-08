@@ -1,0 +1,28 @@
+
+[1mFrom:[0m /home/Acurioustroglodyte/alphabetize-in-esperanto-prework/lib/alphabetize.rb @ line 19 Object#convert_to_int:
+
+     [1;34m6[0m: [32mdef[0m [1;34mconvert_to_int[0m(arr_of_phrases)
+     [1;34m7[0m:   [1;34m# Hard code Esparanto dictionary in array. Is this already provided?[0m
+     [1;34m8[0m:   esperanto_alphabet = [[31m[1;31m"[0m[31ma[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mb[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mc[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mĉ[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31md[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31me[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mf[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mg[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mĝ[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mh[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mĥ[1;31m"[0m[31m[0m,
+     [1;34m9[0m:     [31m[1;31m"[0m[31mi[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mj[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mĵ[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mk[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31ml[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mm[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mn[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mo[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mp[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mr[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31ms[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mŝ[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mt[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mu[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mŭ[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mv[1;31m"[0m[31m[0m, [31m[1;31m"[0m[31mz[1;31m"[0m[31m[0m]
+    [1;34m10[0m: 
+    [1;34m11[0m:   [1;34m# Create conversion result array[0m
+    [1;34m12[0m:   converted_str = []
+    [1;34m13[0m: 
+    [1;34m14[0m:   [1;34m# Create return hash[0m
+    [1;34m15[0m:   converted_names = {}
+    [1;34m16[0m: 
+    [1;34m17[0m:   [1;34m# Collect ints converted from index in esparanto alphabet[0m
+    [1;34m18[0m:   converted_str = arr_of_phrases.collect [32mdo[0m |letter|
+ => [1;34m19[0m:     binding.pry
+    [1;34m20[0m:     esperanto_alphabet.index_of(letter)
+    [1;34m21[0m:   [32mend[0m
+    [1;34m22[0m: 
+    [1;34m23[0m:   [1;34m# Join converted phrase arrays to phrase strings in hash[0m
+    [1;34m24[0m:   arr_of_phrases.each_with_index [32mdo[0m |phrase, index|
+    [1;34m25[0m:     converted_names[phrase] = converted_str[index]
+    [1;34m26[0m:   [32mend[0m
+    [1;34m27[0m:   puts converted_names
+    [1;34m28[0m:   [32mreturn[0m converted_names
+    [1;34m29[0m: [32mend[0m
+
