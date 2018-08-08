@@ -22,7 +22,7 @@ def convert_to_int(arr_of_phrases)
   arr_of_phrases.each_with_index do |phrase, index|
     converted_names[phrase] = converted_str[index]
   end
-
+  puts converted_names
   return converted_names
 end
 
