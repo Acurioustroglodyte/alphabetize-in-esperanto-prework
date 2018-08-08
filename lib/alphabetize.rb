@@ -1,3 +1,4 @@
+require 'pry'
 # Method takes an array of strings and converts each char into
 # that chars place in the esparanto alphabet. Then returns a hash
 # of string phrase keys and array int values
