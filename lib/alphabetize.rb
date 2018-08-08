@@ -4,7 +4,7 @@
 
 def convert_to_int(arr_of_phrases)
   # Hard code Esparanto dictionary in array. Is this already provided?
-  ESPERANTO_ALPHABET = ["a", "b", "c", "ĉ", "d", "e", "f", "g", "ĝ", "h", "ĥ",
+  esperanto_alphabet = ["a", "b", "c", "ĉ", "d", "e", "f", "g", "ĝ", "h", "ĥ",
     "i", "j", "ĵ", "k", "l", "m", "n", "o", "p", "r", "s", "ŝ", "t", "u", "ŭ", "v", "z"]
 
   # Create conversion result array
@@ -15,7 +15,7 @@ def convert_to_int(arr_of_phrases)
 
   # Collect ints converted from index in esparanto alphabet
   converted_str = arr_of_phrases.collect do |letter|
-    ESPERANTO_ALPHABET.index_of(letter)
+    esperanto_alphabet.index_of(letter)
   end
 
   # Join converted phrase arrays to phrase strings in hash
