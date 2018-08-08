@@ -15,6 +15,7 @@ def convert_to_int(arr_of_phrases)
 
   # Collect ints converted from index in esparanto alphabet
   converted_str = arr_of_phrases.collect do |letter|
+    binding.pry
     esperanto_alphabet.index_of(letter)
   end
 
